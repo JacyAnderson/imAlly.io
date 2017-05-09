@@ -1,6 +1,6 @@
 # Bystander Buddy
 
-[Link to Basic Wireframe](http://imgur.com/a/6DQAQ)
+[Link to Basic Wireframe](http://imgur.com/a/6DQAQ) | 
 [Link to Trello Board](https://trello.com/b/G7MfoRFP/project-three-buddy-app)
 
 ## Project Description 
