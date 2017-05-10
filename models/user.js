@@ -5,7 +5,6 @@ var sequelize = new Sequelize('postgres://'+process.env.USERNAME+'@localhost:543
 
 var User = sequelize.define('user', {
   displayName: Sequelize.STRING,
-  username: Sequelize.STRING,
   email: Sequelize.STRING,
   password: Sequelize.STRING
 }, {
