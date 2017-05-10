@@ -7,15 +7,15 @@
 Bystander Buddy is an app aimed to assist survivors of sexual violence in finding appropriate resources to help them. This is presented to the user through easily selectable buttons that assess the user's state in order to pass on helpful information in the same manner as a chatbot.  
 
 ## Team Member Roles 
-### Jacy - 
+### Jacy
   * Project Manager
   * Front-end (SASS, Angular)
   
-### Taylor - 
+### Taylor 
   * Front-end (Angular)
   * Back-end (Satellizer)
 
-### Bill - 
+### Bill 
   * Back-end (SQL, Sequelize, Express)
 
 ## Technology Used

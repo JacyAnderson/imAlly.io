@@ -1,5 +1,63 @@
+// MAIN.SCSS
+
+
+// ==========================================
+//  Functions
+// ==========================================
+
+// Calculate Rems from pxs
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+// ==========================================
+//  Mixins
+// ==========================================
+
+//Font Size  px to rem
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Gradients
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  // Set gradient orientation
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  } @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  } @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacityl
+  $opacity-ed: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie);
+}
+
+// Box Size
+@mixin size($width, $height: $width) {
+      width: $width;
+      height: $height;
+}
+
+
+// ==========================================
+//  All out Sass
+// ==========================================
+
 h1 {
-  font-size: 50px;
+  @include font-size(50px);
 }
 
 body {
