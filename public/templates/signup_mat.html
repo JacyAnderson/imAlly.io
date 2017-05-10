@@ -1,0 +1,57 @@
+<div class="signup-page">
+    <div class="wrapper">
+		<div class="header header-filter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+						<div class="card card-signup">
+							<form class="form" ng-submit="sc.signup()">
+								<div class="header header-primary text-center">
+									<h4>Admin Register</h4>
+								</div>
+								<div class="content">
+
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">face</i>
+										</span>
+										<input type="text" class="form-control" ng-model="sc.new_user.displayName" placeholder="Full Name...">
+									</div>
+
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+										<input type="text" class="form-control" ng-model="sc.new_user.email" placeholder="Email...">
+									</div>
+
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+										<input type="password" ng-model="sc.new_user.password" placeholder="Password..." class="form-control" />
+									</div>
+
+									<!-- If you want to add a checkbox to this form, uncomment this code
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes" checked>
+											Subscribe to newsletter
+										</label>
+									</div> -->
+								</div>
+								<div class="footer text-center">
+									<input type="submit" class="btn btn-simple btn-primary btn-lg" value="Apply">
+								</div>
+							</form>
+						</div>
+						<p>Already have an account? <a href="/login">Login</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+    </div>
+</div>

@@ -56,7 +56,6 @@ app.post('/auth/signup', function (req, res) {
     }
     var user = User.build({
       displayName: req.body.displayName,
-      username: req.body.username,
       email: req.body.email,
       password: req.body.password
     });
@@ -86,7 +85,7 @@ app.post('/auth/login', function (req, res) {
  * Catch All Route
  */
 app.get(['/', '/signup', '/login', '/profile'], function (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/views/admin.html');
 });
 
 

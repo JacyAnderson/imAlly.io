@@ -33,13 +33,13 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'templates/home.html',
+      templateUrl: 'templates/login_mat.html',
       controller: 'HomeController',
       controllerAs: 'home'
     })
     .state('signup', {
       url: '/signup',
-      templateUrl: 'templates/signup.html',
+      templateUrl: 'templates/signup_mat.html',
       controller: 'SignupController',
       controllerAs: 'sc',
       resolve: {
@@ -48,7 +48,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('login', {
       url: '/login',
-      templateUrl: 'templates/login.html',
+      templateUrl: 'templates/login_mat.html',
       controller: 'LoginController',
       controllerAs: 'lc',
       resolve: {
