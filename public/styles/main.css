@@ -1,13 +1,40 @@
+html, body {
+  height: 100%; }
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #6cced9;
+  background: -webkit-linear-gradient(top, #6cced9, #cef2ef);
+  background: linear-gradient(to bottom, #6cced9, #cef2ef);
+  background-repeat: no-repeat; }
+
 h1 {
   font-size: 50px;
   font-size: 3.125rem; }
 
-body {
-  background: #fff; }
+.navbar-brand {
+  font-size: 38px;
+  font-size: 2.375rem;
+  font-family: "Quicksand", sans-serif;
+  color: black !important; }
 
 .no-outline {
   outline: none;
   border: none; }
+
+.text-center {
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-family: "Raleway", sans-serif;
+  color: black !important; }
+  .text-center h2 {
+    font-size: 2rem; }
 
 .top-nav {
   padding: 30px 50px; }

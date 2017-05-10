@@ -1,5 +1,12 @@
 // MAIN.SCSS
 
+// ==========================================
+//  Variables
+// ==========================================
+
+// Site Brand Font
+$main-font: 'Quicksand', sans-serif;
+$sec-font: 'Raleway', sans-serif;
 
 // ==========================================
 //  Functions
@@ -22,7 +29,7 @@
 }
 
 // Gradients
-@mixin gradient($start-color, $end-color, $orientation) {
+@mixin gradient($start-color, $end-color, $orientation, $background-repeat) {
   background: $start-color;
 
   // Set gradient orientation
@@ -36,11 +43,13 @@
     background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
+
+  background-repeat: $background-repeat
 }
 
 // Opacity
 @mixin opacity($opacity) {
-  opacity: $opacityl
+  opacity: $opacity;
   $opacity-ed: $opacity * 100;
   filter: alpha(opacity = $opacity-ie);
 }
@@ -51,22 +60,53 @@
       height: $height;
 }
 
+// Font
+@mixin textStyle($pixels, $font, $color){
+  @include font-size($pixels);
+  font-family: $font;
+  color: $color !important;
+}
 
+@mixin fullBackground {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 // ==========================================
 //  All out Sass
 // ==========================================
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @include fullBackground;
+  @include gradient(#6cced9, #cef2ef, vertical, no-repeat);
+}
 
 h1 {
   @include font-size(50px);
 }
 
-body {
-	background: #fff;
+.navbar-brand {
+  @include textStyle(38px, $main-font, black);
 }
 
 .no-outline {
 	outline: none;
 	border: none;
+}
+
+.text-center {
+  @include textStyle(50px, $sec-font, black);
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 .top-nav {
