@@ -24,6 +24,8 @@
 // Gradients
 @mixin gradient($start-color, $end-color, $orientation) {
   background: $start-color;
+
+  // Set gradient orientation
   @if $orientation == 'vertical' {
     background: -webkit-linear-gradient(top, $start-color, $end-color);
     background: linear-gradient(to bottom, $start-color, $end-color);
