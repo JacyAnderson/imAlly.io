@@ -28,11 +28,11 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   });
 
   // for any unmatched URL redirect to /
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/admin");
 
   $stateProvider
      .state('home', {
-      url: '/',
+      url: '/admin',
       templateUrl: 'templates/dashboard.html',
       controller: 'DashboardController',
       controllerAs: 'dc',
@@ -41,7 +41,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       }
     })
     .state('signup', {
-      url: '/signup',
+      url: '/admin-signup',
       templateUrl: 'templates/signup_mat.html',
       controller: 'SignupController',
       controllerAs: 'sc',
@@ -50,7 +50,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       }
     })
     .state('login', {
-      url: '/login',
+      url: '/admin-login',
       templateUrl: 'templates/login_mat.html',
       controller: 'LoginController',
       controllerAs: 'lc',
@@ -59,7 +59,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       }
     })
     .state('logout', {
-      url: '/logout',
+      url: '/admin-logout',
       template: null,
       controller: 'LogoutController',
       resolve: {
@@ -82,7 +82,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       if ($auth.isAuthenticated()) {
         deferred.resolve();
       } else {
-        $location.path('/login');
+        $location.path('/admin-login');
       }
       return deferred.promise;
     }
@@ -133,7 +133,7 @@ function LoginController ($location, Account) {
       .login(vm.new_user)
       .then(function(){
         vm.new_user = {}; // clear login form
-        $location.path('/'); // redirect to '/profile'
+        $location.path('/admin'); // redirect to '/profile'
       })
   };
 }
@@ -149,7 +149,7 @@ function SignupController ($location, Account) {
       .then(
         function (response) {
           vm.new_user = {}; // clear sign up form
-          $location.path('/'); // redirect to '/profile'
+          $location.path('/admin'); // redirect to '/profile'
         }
       );
   };
@@ -160,7 +160,7 @@ function LogoutController ($location, Account) {
   Account
     .logout()
     .then(function () {
-        $location.path('/login');
+        $location.path('/admin-login');
     });
 }
 

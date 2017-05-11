@@ -84,8 +84,12 @@ app.post('/auth/login', function (req, res) {
 /*
  * Catch All Route
  */
-app.get(['/', '/signup', '/login', '/profile'], function (req, res) {
+app.get(['/admin', '/admin/signup', '/admin/login', '/admin/profile'], function (req, res) {
   res.sendFile(__dirname + '/views/admin.html');
+});
+
+app.get(['/'], function (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
 });
 
 
