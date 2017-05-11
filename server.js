@@ -21,6 +21,10 @@ app.use(express.static(__dirname + '/public'));
 var db = require('./models');
 var User = db.models.User;
 
+var routes = require('./config/routes');
+app.use(routes);
+
+
 /* API Routes */
 
 // app.get('/api/me', auth.ensureAuthenticated, userController.index);
@@ -30,9 +34,9 @@ var User = db.models.User;
   
 /* Auth Routes */
 
-app.post('/auth/signup', userController.create);
+// app.post('/auth/signup', userController.create);
 
-app.post('/auth/login', userController.login);
+// app.post('/auth/login', userController.login);
 
 /*
  * Catch All Route
