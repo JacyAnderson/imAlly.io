@@ -1,5 +1,5 @@
 angular
-  .module('AuthSampleApp')
+  .module('Admin')
   .controller('MainController', MainController)
   .controller('HomeController', HomeController)
   .controller('LoginController', LoginController)

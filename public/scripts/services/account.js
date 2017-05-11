@@ -1,4 +1,4 @@
-angular
+angular.module('Admin')
   .service('Account', Account);
 
   
