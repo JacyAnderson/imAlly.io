@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
   height: 100%; }
 
 body {
@@ -41,3 +41,8 @@ h1 {
 
 .top-nav-space {
   height: 100px; }
+*/
+
+.card-dashboard {
+  width: 100%;
+}
