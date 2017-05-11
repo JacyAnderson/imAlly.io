@@ -1,12 +1,13 @@
 var db = require('../models');
 
-
+// index
 function index(req, res) {
 	Resource.findAll().then(function(resources){
 		res.json(resources);
 	});
 }
 
+// show
 function show(req, res) {
 	Resource.findById(req.params.id)
 	.then(function(resource){
@@ -15,6 +16,7 @@ function show(req, res) {
 	});
 }
 
+// create
 function create(req, res) {
 	Resource.create(req.body).then(function(resource){
 		if(!resource) return error(res, "not saved");
@@ -22,6 +24,7 @@ function create(req, res) {
 	});
 }
 
+// update
 function update(req, res) {
 	Resource.findById(req.params.id)
 	.then(function(resource){
@@ -33,6 +36,7 @@ function update(req, res) {
 	});
 }
 
+// destroy
 function destroy(req, res) {
 	Resource.findById(req.params.id)
 	.then(function(resource){
