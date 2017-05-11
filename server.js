@@ -23,53 +23,14 @@ var User = db.models.User;
 
 /* API Routes */
 
-app.get('/api/me', auth.ensureAuthenticated, function (req, res) {
-  console.log(req.user);
-  User.findById(req.user).then(function (user) {
-    if (!user) {
-      return res.status(400).send({ message: 'User not found.' });
-    }
-    res.send(user);
-  });
-});
+// app.get('/api/me', auth.ensureAuthenticated, userController.index);
+  
 
-app.put('/api/me', auth.ensureAuthenticated, function (req, res) {
-  User.findById(req.user).then(function (user) {
-    if (!user) {
-      return res.status(400).send({ message: 'User not found.' });
-    }
-    user.displayName = req.body.displayName || user.displayName;
-    user.username = req.body.username || user.username;
-    user.email = req.body.email || user.email;
-    user.save().then(function(result) {
-      if (!result) {
-        res.status(500).send({ message: "Oh noes an error!" });
-      }      
-      res.send(result);
-    });
-  });
-});
-
+// app.put('/api/me', auth.ensureAuthenticated, userController.update);
+  
 /* Auth Routes */
 
-app.post('/auth/signup', function (req, res) {
-  User.findOne({where: { email: req.body.email }}).then(function (existingUser) {
-    if (existingUser) {
-      return res.status(409).send({ message: 'Email is already taken.' });
-    }
-    var user = User.build({
-      displayName: req.body.displayName,
-      email: req.body.email,
-      password: req.body.password
-    });
-    user.save().then(function (result) {
-      if (!result) {
-        res.status(500).send({ message: "Oh noes an error!" });
-      }
-      res.send({ token: auth.createJWT(result) });
-    });
-  });
-});
+app.post('/auth/signup', userController.create);
 
 app.post('/auth/login', userController.login);
 
