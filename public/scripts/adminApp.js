@@ -1,11 +1,15 @@
 angular
-  .module('app', [
+  .module('AuthSampleApp', [
     'ui.router',
     'satellizer'
   ])
   .config(configRoutes)
   ;
 
+
+////////////
+// ROUTES //
+////////////
 
 configRoutes.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"]; // minification protection
 function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -77,3 +81,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     }
 
 }
+
+/////////////////
+// CONTROLLERS //
+/////////////////
