@@ -25,3 +25,9 @@ Bystander Buddy is an app aimed to assist survivors of sexual violence in findin
 - Satellizer
 - Bootstrap
 - Sequelize 
+
+## Resources
+- Rainn.org
+- Savacenter.org
+- b-heard.org
+
