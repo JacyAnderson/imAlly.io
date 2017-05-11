@@ -3,10 +3,12 @@ var express = require('express'),
     app = express(),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose'),
-    auth = require('./resources/auth');
+    auth = require('./resources/auth'),
+    userController = require('./controllers/user');
 
 // require and load dotenv
-require('dotenv').load();
+require('dotenv').config();
+
 
 // configure bodyParser (for receiving form data)
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,7 +18,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 // require SQL User
-var User = require('./models/user');
+var db = require('./models');
+var User = db.models.User;
 
 /* API Routes */
 
@@ -68,18 +71,7 @@ app.post('/auth/signup', function (req, res) {
   });
 });
 
-app.post('/auth/login', function (req, res) {
-  User.findOne({where: { email: req.body.email }}).then(function (existingUser) {
-    if (!existingUser) {
-      return res.status(401).send({ message: 'Invalid email or password.' });
-    }
-    var validPassword = existingUser.comparePassword(req.body.password);
-    if (!validPassword) {
-      return res.status(401).send({ message: 'Invalid email or password.' });
-    }
-    res.send({ token: auth.createJWT(existingUser) });
-  });
-});
+app.post('/auth/login', userController.login);
 
 /*
  * Catch All Route
