@@ -1,5 +1,5 @@
 angular
-  .module('AuthSampleApp', [
+  .module('Admin', [
     'ui.router',
     'satellizer'
   ])
@@ -24,7 +24,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise("/admin");
 
   $stateProvider
-     .state('home', {
+     .state('dashboard', {
       url: '/admin',
       templateUrl: 'templates/dashboard.html',
       controller: 'DashboardController',

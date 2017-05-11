@@ -1,5 +1,5 @@
 angular
-  .module('app', [
+  .module('App', [
     'ui.router',
     'satellizer'
   ])
@@ -17,7 +17,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   });
 
   // for any unmatched URL redirect to /
-  $urlRouterProvider.otherwise("/admin");
+  $urlRouterProvider.otherwise("/");
 
   $stateProvider
      .state('home', {

@@ -1,4 +1,4 @@
-angular.module('AuthSampleApp')
+angular.module('Admin')
   .service('Account', Account);
 
   

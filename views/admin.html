@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="AuthSampleApp">
+<html lang="en" ng-app="Admin">
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
@@ -59,7 +59,7 @@
         		<ul class="nav navbar-nav navbar-right">
 					<li ng-show="!main.currentUser()"><a ui-sref="signup">Sign Up</a></li>
 		          	<li ng-show="!main.currentUser()"><a ui-sref="login">Log In</a></li>
-		         	<li ng-show="main.currentUser()"><a ui-sref="profile">{{main.currentUser().displayName}}</a></li>
+		         	<li ng-show="main.currentUser()"><a>{{main.currentUser().displayName}}</a></li>
 		          	<li ng-show="main.currentUser()"><a ui-sref="logout">Log Out</a></li>
         		</ul>
         	</div>
