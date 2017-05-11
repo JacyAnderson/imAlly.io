@@ -9,35 +9,104 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #6cced9;
-  background: -webkit-linear-gradient(top, #6cced9, #cef2ef);
-  background: linear-gradient(to bottom, #6cced9, #cef2ef);
+  background: rgba(223, 133, 182, 0.6);
+  background: -webkit-linear-gradient(top, rgba(223, 133, 182, 0.6), rgba(108, 206, 217, 0.6));
+  background: linear-gradient(to bottom, rgba(223, 133, 182, 0.6), rgba(108, 206, 217, 0.6));
   background-repeat: no-repeat; }
 
-h1 {
-  font-size: 50px;
-  font-size: 3.125rem; }
+.escape {
+  opacity: 0.6;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-family: "Raleway", sans-serif;
+  color: #7F2626 !important;
+  font-weight: 600;
+  border: 3px solid #ac2925;
+  border-radius: 0px !important;
+  float: right;
+  margin-right: 35px; }
+  .escape:hover {
+    opacity: 1; }
+
+.navbar, .escape {
+  background-color: transparent !important; }
+
+.navbar {
+  color: #ffffcc !important; }
+
+.navbar li {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "Raleway", sans-serif;
+  color: #242424 !important; }
 
 .navbar-brand {
-  font-size: 38px;
-  font-size: 2.375rem;
+  font-size: 80px;
+  font-size: 5rem;
   font-family: "Quicksand", sans-serif;
-  color: black !important; }
+  color: #ffffcc !important;
+  margin-left: 12px !important; }
+
+.navbar-header {
+  float: none; }
+
+.navbar-left, .navbar-right {
+  float: none !important; }
+
+.navbar-toggle {
+  display: block; }
+
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px; }
+
+.navbar-collapse.collapse {
+  display: none !important; }
+
+.navbar-nav {
+  float: none !important;
+  margin-top: 7.5px; }
+
+.navbar-nav > li {
+  float: none; }
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.collapse.in {
+  display: block !important; }
 
 .no-outline {
   outline: none;
   border: none; }
 
 .text-center {
-  font-size: 50px;
-  font-size: 3.125rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: "Raleway", sans-serif;
-  color: black !important; }
-  .text-center h2 {
-    font-size: 2rem; }
+  color: #242424 !important;
+  margin-top: 40px; }
+
+.tooltip {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  color: black !important;
+  margin-top: 8px !important; }
 
 .top-nav {
   padding: 30px 50px; }
 
 .top-nav-space {
   height: 100px; }
+
+@media screen and (max-width: 448px) {
+  .escape {
+    position: fixed;
+    bottom: 10px;
+    left: 33%; } }
