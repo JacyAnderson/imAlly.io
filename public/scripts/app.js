@@ -8,7 +8,7 @@ angular
   .controller('LoginController', LoginController)
   .controller('SignupController', SignupController)
   .controller('LogoutController', LogoutController)
-  .controller('ProfileController', ProfileController)
+  .controller('DashboardController', DashboardController)
   .service('Account', Account)
   .config(configRoutes)
   ;
@@ -31,11 +31,14 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
-    .state('home', {
+     .state('home', {
       url: '/',
-      templateUrl: 'templates/login_mat.html',
-      controller: 'HomeController',
-      controllerAs: 'home'
+      templateUrl: 'templates/dashboard.html',
+      controller: 'DashboardController',
+      controllerAs: 'dc',
+      resolve: {
+        loginRequired: loginRequired
+      }
     })
     .state('signup', {
       url: '/signup',
@@ -63,16 +66,6 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
         loginRequired: loginRequired
       }
     })
-    .state('profile', {
-      url: '/profile',
-      templateUrl: 'templates/profile.html',
-      controller: 'ProfileController',
-      controllerAs: 'profile',
-      resolve: {
-        loginRequired: loginRequired
-      }
-    })
-
 
     function skipIfLoggedIn($q, $auth) {
       var deferred = $q.defer();
@@ -140,7 +133,7 @@ function LoginController ($location, Account) {
       .login(vm.new_user)
       .then(function(){
         vm.new_user = {}; // clear login form
-        $location.path('/profile'); // redirect to '/profile'
+        $location.path('/'); // redirect to '/profile'
       })
   };
 }
@@ -156,7 +149,7 @@ function SignupController ($location, Account) {
       .then(
         function (response) {
           vm.new_user = {}; // clear sign up form
-          $location.path('/profile'); // redirect to '/profile'
+          $location.path('/'); // redirect to '/profile'
         }
       );
   };
@@ -172,18 +165,18 @@ function LogoutController ($location, Account) {
 }
 
 
-ProfileController.$inject = ["$location", "Account"]; // minification protection
-function ProfileController ($location, Account) {
-  var vm = this;
-  vm.new_profile = {}; // form data
+DashboardController.$inject = ["$location", "Account"]; // minification protection
+function DashboardController ($location, Account) {
+  // var vm = this;
+  // vm.new_profile = {}; // form data
 
-  vm.updateProfile = function() {
-    Account
-      .updateProfile(vm.new_profile)
-      .then(function () {
-        vm.showEditForm = false;
-      });
-  };
+  // vm.updateDashboard = function() {
+  //   Account
+  //     .updateProfile(vm.new_profile)
+  //     .then(function () {
+  //       vm.showEditForm = false;
+  //     });
+  // };
 }
 
 //////////////
@@ -201,6 +194,7 @@ function Account($http, $q, $auth) {
   self.currentUser = currentUser;
   self.getProfile = getProfile;
   self.updateProfile = updateProfile;
+  self.loginAttempt = false;
 
   function signup(userData) {
     return (
@@ -229,6 +223,7 @@ function Account($http, $q, $auth) {
 
           function onError(error) {
             console.error(error);
+            self.loginFail = true;
           }
         )
     );
