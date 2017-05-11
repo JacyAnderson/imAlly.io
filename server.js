@@ -26,9 +26,13 @@ app.use(express.static(__dirname + '/public'));
 /*
  * Catch All Route
  */
+
 // app.get(['/admin', '/admin/signup', '/admin/login', '/admin/profile'], function (req, res) {
 //   res.sendFile(__dirname + '/views/admin.html');
 // });
+app.get(['/admin', '/admin-signup', '/admin-login'], function (req, res) {
+  res.sendFile(__dirname + '/views/admin.html');
+});
 
 // app.get(['/'], function (req, res) {
 //   res.sendFile(__dirname + '/views/index.html');

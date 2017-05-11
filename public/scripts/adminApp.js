@@ -1,11 +1,15 @@
 angular
-  .module('App', [
+  .module('Admin', [
     'ui.router',
     'satellizer'
   ])
   .config(configRoutes)
   ;
 
+
+////////////
+// ROUTES //
+////////////
 
 configRoutes.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"]; // minification protection
 function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -17,10 +21,10 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   });
 
   // for any unmatched URL redirect to /
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/admin");
 
   $stateProvider
-     .state('home', {
+     .state('dashboard', {
       url: '/admin',
       templateUrl: 'templates/dashboard.html',
       controller: 'DashboardController',
@@ -77,3 +81,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     }
 
 }
+
+/////////////////
+// CONTROLLERS //
+/////////////////

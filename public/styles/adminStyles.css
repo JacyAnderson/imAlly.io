@@ -1,0 +1,12 @@
+.card-dashboard {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.dashboard-header {
+	padding: 100px;
+}
+
+.dashboard-table {
+	margin: 50px 0;
+}
