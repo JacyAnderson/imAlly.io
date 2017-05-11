@@ -23,16 +23,21 @@ router.delete('/api/resources/:id', resourceController.destroy);
 // Admin Routes 
 
 // index 
-router.get('/api/admin', adminController.index);
+router.get('/api/me', adminController.index);
 
-// create
-router.post('/api/admin', adminController.create);
-
-// show
-router.get('/api/admin/:id', adminController.show);
 
 // update
-router.put('/api/admin/:id', adminController.update);
+router.put('/api/me', adminController.update);
+
+// create
+router.post('/auth/signup', adminController.create);
+
+// login
+router.post('/auth/login', adminController.login);
+
+// get all
+router.get('/admin', '/admin/signup', '/admin/login', '/admin/profile', adminController.grab);
+
 
 // destroy
 router.delete('/api/admin/:id' , adminController.destroy);
