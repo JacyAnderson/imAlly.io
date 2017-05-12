@@ -31,12 +31,19 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
       controller: 'MainController',
       controllerAs: 'main'
     })
-      .state('next', {
-       url: '/next',
-       templateUrl: 'templates/next.html',
-       controller: 'MainController',
-       controllerAs: 'main'
-     })
+    .state('next', {
+     url: '/next',
+     templateUrl: 'templates/next.html',
+     controller: 'MainController',
+     controllerAs: 'main'
+   })
+   .state('resource', {
+    url: '/resource',
+    templateUrl: 'templates/resource.html',
+    controller: 'ResourceController',
+    controllerAs: 'resource'
+  })
+
 
 }
 
