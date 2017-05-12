@@ -45,7 +45,7 @@ app.get(['/admin', '/admin-signup', '/admin-login'], function (req, res) {
   res.sendFile(__dirname + '/views/admin.html');
 });
 
-app.get(['/'], function (req, res) {
+app.get(['/', '/next'], function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 

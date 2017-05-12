@@ -1,14 +1,15 @@
 angular
-  .module('Admin')
-  .controller('MainController', MainController)
+  .module('AdminApp')
+  .controller('AdminController', AdminController)
   .controller('HomeController', HomeController)
   .controller('LoginController', LoginController)
   .controller('SignupController', SignupController)
   .controller('LogoutController', LogoutController)
   .controller('DashboardController', DashboardController);
 
-MainController.$inject = ["Account"]; // minification protection
-function MainController (Account) {
+
+AdminController.$inject = ["Account"]; // minification protection
+function AdminController (Account) {
   var vm = this;
 
   vm.currentUser = function() {

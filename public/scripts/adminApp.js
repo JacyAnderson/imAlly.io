@@ -1,5 +1,5 @@
 angular
-  .module('Admin', [
+  .module('AdminApp', [
     'ui.router',
     'satellizer'
   ])
