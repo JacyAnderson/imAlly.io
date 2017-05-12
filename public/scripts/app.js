@@ -7,6 +7,10 @@ angular
   ;
 
 
+////////////
+// ROUTES //
+////////////
+
 configRoutes.$inject = ["$stateProvider", "$urlRouterProvider", "$locationProvider"]; // minification protection
 function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -16,64 +20,26 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     requireBase: false
   });
 
+
   // for any unmatched URL redirect to /
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
      .state('home', {
-      url: '/admin',
-      templateUrl: 'templates/dashboard.html',
-      controller: 'DashboardController',
-      controllerAs: 'dc',
-      resolve: {
-        loginRequired: loginRequired
-      }
+      url: '/',
+      templateUrl: 'templates/home.html',
+      controller: 'MainController',
+      controllerAs: 'main'
     })
-    .state('signup', {
-      url: '/admin-signup',
-      templateUrl: 'templates/signup_mat.html',
-      controller: 'SignupController',
-      controllerAs: 'sc',
-      resolve: {
-        skipIfLoggedIn: skipIfLoggedIn
-      }
-    })
-    .state('login', {
-      url: '/admin-login',
-      templateUrl: 'templates/login_mat.html',
-      controller: 'LoginController',
-      controllerAs: 'lc',
-      resolve: {
-        skipIfLoggedIn: skipIfLoggedIn
-      }
-    })
-    .state('logout', {
-      url: '/admin-logout',
-      template: null,
-      controller: 'LogoutController',
-      resolve: {
-        loginRequired: loginRequired
-      }
-    })
-
-    function skipIfLoggedIn($q, $auth) {
-      var deferred = $q.defer();
-      if ($auth.isAuthenticated()) {
-        deferred.reject();
-      } else {
-        deferred.resolve();
-      }
-      return deferred.promise;
-    }
-
-    function loginRequired($q, $location, $auth) {
-      var deferred = $q.defer();
-      if ($auth.isAuthenticated()) {
-        deferred.resolve();
-      } else {
-        $location.path('/admin-login');
-      }
-      return deferred.promise;
-    }
+      .state('next', {
+       url: '/next',
+       templateUrl: 'templates/next.html',
+       controller: 'MainController',
+       controllerAs: 'main'
+     })
 
 }
+
+/////////////////
+// CONTROLLERS //
+/////////////////

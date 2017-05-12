@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="Admin">
+<html lang="en" ng-app="AdminApp">
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
@@ -36,12 +36,12 @@
   	<script type="text/javascript" src="bower_components/satellizer/dist/satellizer.min.js"></script>
 
      <script type="text/javascript" src="scripts/adminApp.js"></script>
-     <script src="/scripts/controllers/admin.js"></script> 
+     <script src="/scripts/controllers/adminControllers.js"></script> 
      <script src="/scripts/services/account.js"></script> 
 
 </head>
 
-<body ng-controller="MainController as main">
+<body ng-controller="AdminController as admin">
   <nav class="navbar navbar-default navbar-absolute">
     	<div class="container">
         	<!-- Brand and toggle get grouped for better mobile display -->
@@ -57,10 +57,10 @@
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
-					<li ng-show="!main.currentUser()"><a ui-sref="signup">Sign Up</a></li>
-		          	<li ng-show="!main.currentUser()"><a ui-sref="login">Log In</a></li>
-		         	<li ng-show="main.currentUser()"><a>{{main.currentUser().displayName}}</a></li>
-		          	<li ng-show="main.currentUser()"><a ui-sref="logout">Log Out</a></li>
+					<li ng-show="!admin.currentUser()"><a ui-sref="signup">Sign Up</a></li>
+		          	<li ng-show="!admin.currentUser()"><a ui-sref="login">Log In</a></li>
+		         	<li ng-show="admin.currentUser()"><a>{{admin.currentUser().displayName}}</a></li>
+		          	<li ng-show="admin.currentUser()"><a ui-sref="logout">Log Out</a></li>
         		</ul>
         	</div>
     	</div>
