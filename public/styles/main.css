@@ -20,70 +20,61 @@ body {
   font-size: 1.375rem;
   font-family: "Raleway", sans-serif;
   color: #7F2626 !important;
+  width: 110px;
+  height: 50px;
   font-weight: 600;
   border: 3px solid #ac2925;
   border-radius: 0px !important;
-  float: right;
-  margin-right: 35px; }
+  float: right !important;
+  margin-right: 100px; }
   .escape:hover {
     opacity: 1; }
+
+.face {
+  font-size: 32px;
+  font-size: 2rem; }
 
 .navbar, .escape {
   background-color: transparent !important; }
 
-.navbar {
-  color: #ffffcc !important; }
+.rainn-logo {
+  width: 160px;
+  height: 80px;
+  margin: 0 auto; }
 
-.navbar li {
-  font-size: 18px;
-  font-size: 1.125rem;
+.res-btn {
+  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: "Raleway", sans-serif;
-  color: #242424 !important; }
+  color: black !important;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid #00cdcd;
+  border-radius: 0px !important; }
+  .res-btn .btn-text {
+    margin-left: 5px;
+    padding-bottom: 10px; }
+  .res-btn:hover {
+    color: white !important;
+    background-color: teal !important; }
+
+.resource-card {
+  margin: 40px;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.toggler, .escape {
+  margin-top: 20px !important; }
+
+.toggler {
+  outline: none !important;
+  border: none; }
 
 .navbar-brand {
-  font-size: 80px;
-  font-size: 5rem;
+  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Quicksand", sans-serif;
   color: #ffffcc !important;
-  margin-left: 12px !important; }
-
-.navbar-header {
-  float: none; }
-
-.navbar-left, .navbar-right {
-  float: none !important; }
-
-.navbar-toggle {
-  display: block; }
-
-.navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-
-.navbar-fixed-top {
-  top: 0;
-  border-width: 0 0 1px; }
-
-.navbar-collapse.collapse {
-  display: none !important; }
-
-.navbar-nav {
-  float: none !important;
-  margin-top: 7.5px; }
-
-.navbar-nav > li {
-  float: none; }
-
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.collapse.in {
-  display: block !important; }
-
-.no-outline {
-  outline: none;
-  border: none; }
+  margin-left: 60px !important; }
 
 .text-center {
   font-size: 15px;
@@ -98,12 +89,6 @@ body {
   font-family: "Raleway", sans-serif;
   color: black !important;
   margin-top: 8px !important; }
-
-.top-nav {
-  padding: 30px 50px; }
-
-.top-nav-space {
-  height: 100px; }
 
 @media screen and (max-width: 448px) {
   .escape {
