@@ -1,17 +1,19 @@
+<div class="container">
+<div style="overflow: scroll; height: 100%">
 <div class="row">
-  <div class="card resource-card col-md-3" style="width: 20rem;">
-    <img class="card-img-top rainn-logo" src={{resource.logo}} alt="Card image cap" onclick="window.location='https://www.rainn.org/'">
+  <div class="card resource-card col-md-3" style="width: 20rem;" ng-repeat="res in resource.all">
+    <img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap" onclick="window.location='https://www.rainn.org/'">
     <div class="card-block">
       <div class="row"> 
-        <h5>{{resource.title}}</h5>
-        <h6 style="font-size: 18px; color: #00cdcd">{{resource.type}}</h6>
+        <h5>{{res.title}}</h5>
+        <h6 style="font-size: 18px; color: #00cdcd">{{res.type}}</h6>
         <hr/>
         <div style="height: 150px; overflow-y: scroll;">
-        <p class="card-text">{{resource.description}}</p> 
+        <p class="card-text">{{res.description}}</p> 
         </div>
         <div class="row btn-row justify-content-center">
           <div class="col-md-10">
-            <a href={{resource.url}} class="btn btn-primary res-btn"><i class="material-icons">phone</i> <span class="btn-text">800.656.HOPE(4673)</span></a>
+            <a href={{resource.res.url}} class="btn btn-primary res-btn"><i class="material-icons">phone</i> <span class="btn-text">800.656.HOPE(4673)</span></a>
           </div>
         </div>
       </div>
@@ -25,4 +27,6 @@
       </div>  -->
     </div>
   </div>
+</div>
+</div>
 </div>

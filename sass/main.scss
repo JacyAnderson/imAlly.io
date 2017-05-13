@@ -90,6 +90,7 @@ $themeColor2: rgba(108,206,217, 0.6);
 }
 
 @mixin fullBackground {
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -12,7 +12,9 @@ body {
   background: rgba(223, 133, 182, 0.6);
   background: -webkit-linear-gradient(top, rgba(223, 133, 182, 0.6), rgba(108, 206, 217, 0.6));
   background: linear-gradient(to bottom, rgba(223, 133, 182, 0.6), rgba(108, 206, 217, 0.6));
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+background-attachment: fixed;
+}
 
 .escape {
   opacity: 0.6;

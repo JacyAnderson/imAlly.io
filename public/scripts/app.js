@@ -42,6 +42,12 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: 'templates/resource.html',
     controller: 'ResourceController',
     controllerAs: 'resource'
+  }) 
+  .state('friend-1', {
+    url: '/friend-1',
+    templateUrl: 'templates/friend-1.html',
+    controller: 'FriendController',
+    controllerAs: 'friend'
   })
 
 
