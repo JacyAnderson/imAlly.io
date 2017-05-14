@@ -49,6 +49,11 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: 'FriendController',
     controllerAs: 'friend'
   })
+  .state('team', {
+    url: '/team',
+    templateUrl: 'templates/team.html'
+  })
+
 
 
 }
