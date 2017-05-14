@@ -14,6 +14,20 @@ var resObj = [{
 	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
 	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
 	type: "Hotline"
+},
+{
+	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
+	title: 'The Rape, Abuse & Incest National Network (RAINN)',
+	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
+	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
+	type: "Hotline"
+},
+{
+	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
+	title: 'The Rape, Abuse & Incest National Network (RAINN)',
+	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
+	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
+	type: "Hotline"
 }];
 
 // index
