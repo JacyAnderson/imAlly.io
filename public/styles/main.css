@@ -105,9 +105,9 @@ body {
     background: #00cdcd;
     color: #fff; }
 
-.smiley {
-  font-size: 30px;
-  font-size: 1.875rem; }
+.smiley, .sad, .depressed, .eh, .happyTwo {
+  font-size: 70px;
+  font-size: 4.375rem; }
 
 @media screen and (max-width: 448px) {
   .escape {

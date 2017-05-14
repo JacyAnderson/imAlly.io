@@ -205,8 +205,8 @@ body {
 //==================================
 // Emoji
 //==================================
-.smiley {
-  @include font-size(30px);
+.smiley, .sad, .depressed, .eh, .happyTwo {
+  @include font-size(70px);
 }
 
 // ==========================================
