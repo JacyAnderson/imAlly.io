@@ -200,12 +200,25 @@ body {
   border-radius: 0px !important;
   background: transparent;
   color: #00cdcd;
+  width: 130px;
   &:hover {
     background: #00cdcd;
     color: #fff;
   }
 }
 
+.full-width{
+  width: 100% !important;
+}
+
+.row-space {
+  padding-top: 20px;
+}
+
+.card-description {
+  height: 150px !important;
+  overflow-y: scroll !important;
+}
 //==================================
 // Emoji
 //==================================

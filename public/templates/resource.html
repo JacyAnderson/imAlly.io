@@ -1,18 +1,18 @@
-<div class="container" style="margin-top: 20px">
+<div class="container row-space">
     <h1 class="display-1">Resources</h1>
     <p class="lead">Some resources that could be helpful</p>
 </div>
 <div class="container">
 <hr/>
   <div class="row justify-content-center">
-    <div class="card resource-card col-md-3" style="width: 20rem;" ng-repeat="res in resource.all">
+    <div class="card resource-card col-md-3" ng-repeat="res in resource.all">
       <a href= {{res.url}}><img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap"></a>
       <div class="card-block">
         <div class="row"> 
           <h5>{{res.title}}</h5>
           <h6 style="font-size: 18px; color: #00cdcd">{{res.type}}</h6>
           <hr/>
-          <div style="height: 150px; overflow-y: scroll;">
+          <div class="card-description">
           <p class="card-text">{{res.description}}</p> 
           </div>
           <div class="row btn-row justify-content-center">
@@ -21,14 +21,6 @@
             </div>
           </div>
         </div>
-        
-        <!-- <div class="row">
-          <h6>Live Chat</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
-          <div class="row btn-row clearfix">
-              <a href="#" class="btn btn-primary res-btn pull-right" onclick="window.location='https://hotline.rainn.org/online/terms-of-service.jsp'"><i class="material-icons">comment</i><span class="btn-text">Live Chat</span></a>
-          </div>
-        </div>  -->
       </div>
     </div>
   </div>
