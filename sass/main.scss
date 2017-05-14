@@ -8,7 +8,7 @@
 $main-font: 'Quicksand', sans-serif;
 
 // Main text font
-$sec-font: 'Raleway', sans-serif;
+$sec-font: 'Raleway', sans-serif !important;
 
 // Font Colors
 $mainColor: #ffffcc;
@@ -89,12 +89,11 @@ $themeColor2: rgba(108,206,217, 0.6);
 @mixin fullBackground {
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-attachment: fixed;
+   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover
 }
 // ==========================================
 //  All out Sass
@@ -185,6 +184,17 @@ body {
 .tooltip {
   @include textStyle(20px, $sec-font, black);
   margin-top: 8px !important;
+}
+
+.mat-btn {
+  border: 2px solid #00cdcd !important;
+  border-radius: 0px !important;
+  background: #00cdcd;
+  color: #fff;
+  &:hover {
+    background: transparent;
+    color: #00cdcd;
+  }
 }
 
 // ==========================================
