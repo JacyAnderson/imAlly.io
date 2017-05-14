@@ -12,7 +12,7 @@ var resObj = [{
 	logo: 'http://savacenter.org/wp-content/uploads/2015/01/SAVA-Logo.jpg',
 	title: 'Sexual Assault Viticm Advocate (SAVA)',
 	description: 'SAVA’s direct victim services provide a safety net to individuals impacted by sexual violence. SAVA’s services offer accessible, inclusive therapy and support services to victims regardless of income, gender, sexual orientation, immigration status or any other characteristic.',
-	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
+	url: 'http://savacenter.org/',
 	type: "General"
 },
 {
@@ -23,10 +23,10 @@ var resObj = [{
 	type: "Survivor Stories"
 },
 {
-	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
+	logo: 'https://tvlvmcjg4f-flywheel.netdna-ssl.com/wp-content/uploads/2016/08/Logo-with-ribbon.png',
 	title: 'The Rape, Abuse & Incest National Network (RAINN)',
-	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
-	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
+	description: 'The National Suicide Prevention Lifeline is a national network of local crisis centers that provides free and confidential emotional support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week.',
+	url: 'https://suicidepreventionlifeline.org/',
 	type: "Hotline"
 }];
 
