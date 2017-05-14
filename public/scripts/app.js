@@ -61,6 +61,12 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: "FeelingController",
     controllerAs: 'feeling'
   })
+  .state('emotion', {
+    url: '/emotion',
+    templateUrl: 'templates/current-emotion.html',
+    controller: "EmotionController",
+    controllerAs: 'emotion'
+  })
   .state('team', {
     url: '/team',
     templateUrl: 'templates/team.html'
