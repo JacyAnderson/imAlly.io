@@ -14,9 +14,6 @@ $sec-font: 'Raleway', sans-serif;
 $mainColor: #ffffcc;
 $secColor: #242424;
 
-// Theme Colors
-// $themeColor1: #df85b6;
-// $themeColor2: #6cced9;
 $themeColor1: rgba(223,133,182, 0.6);
 $themeColor2: rgba(108,206,217, 0.6);
 
@@ -172,63 +169,11 @@ body {
   border: none;
 }
 
-
-// .navbar {
-//   color: $mainColor !important;
-// }
-
-// Li elements
- // Sets hamburger menu's list item's font/color
-// .navbar li {
-//   @include textStyle(18px, $sec-font, $secColor);
-// } 
-
 // Brand name
 .navbar-brand {
   @include textStyle(50px, $main-font, $mainColor);
   margin-left: 60px !important;
 }
-
-// // Section sets hamburger menu to constant
-// .navbar-header {
-//   float: none;
-// }
-// .navbar-left,.navbar-right {
-//   float: none !important;
-// }
-// .navbar-toggle {
-//   display: block;
-// }
-// .navbar-collapse {
-//   border-top: 1px solid transparent;
-//   box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-// }
-// .navbar-fixed-top {
-//   top: 0;
-//   border-width: 0 0 1px;
-// }
-// .navbar-collapse.collapse {
-//   display: none!important;
-// }
-// .navbar-nav {
-//   float: none!important;
-//   margin-top: 7.5px;
-// }
-// .navbar-nav>li {
-//   float: none;
-// }
-// .navbar-nav>li>a {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-// }
-// .collapse.in{
-//   display:block !important;
-// }
-
-// .no-outline {
-// 	outline: none;
-// 	border: none;
-// }
 
 // //============================================
 
@@ -241,14 +186,6 @@ body {
   @include textStyle(20px, $sec-font, black);
   margin-top: 8px !important;
 }
-
-// .top-nav {
-// 	padding: 30px 50px;
-// }
-
-// .top-nav-space {
-// 	height: 100px;
-// }
 
 // ==========================================
 //  Media Queries
