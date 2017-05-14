@@ -89,11 +89,14 @@ $themeColor2: rgba(108,206,217, 0.6);
 @mixin fullBackground {
   background-position: center center;
   background-repeat: no-repeat;
-   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover
+}
+
+.background-fixed {
+   background-attachment: fixed;
 }
 // ==========================================
 //  All out Sass
@@ -219,6 +222,11 @@ body {
 .card-description {
   height: 150px !important;
   overflow-y: scroll !important;
+}
+
+.card-type {
+  font-size: 18px !important;
+  color: #00cdcd !important;
 }
 
 .button-top-space {
