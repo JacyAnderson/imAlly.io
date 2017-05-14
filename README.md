@@ -10,6 +10,12 @@ Ally.io is an anonymous, virtual “buddy” to help connect survivors of sexual
 ## Problem to solve: 
 We’re not trying to solve the entire problem of sexual assault/trauma with our app - we can't - but we can try to inspire communication and survivor empowerment by bridging the gap between people who need help, and professionals who are qualified to do so. 
 
+## WORKING USERFLOW(s)
+### Persona - Survivor of a recent sexual crime who is now in a safe location
+* Me ---> Yes ---> Depressed emoji ---> Violated
+
+### Persona - Survivor who is NOT in a safe location
+* Me ---> No ---> Resources
 
 ## Team Member Roles (Click names for Github Links)
 ### [Jacy](https://github.com/JacyAnderson)
