@@ -3,6 +3,8 @@ angular
   .controller('MainController', MainController)
   .controller('ResourceController', ResourceController)
   .controller('FriendController', FriendController)
+  .controller('MeController', MeController)
+  .controller('FeelingController', FeelingController)
 
 // var resObj = {
 // 	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
@@ -37,4 +39,14 @@ function ResourceController ($http) {
 function FriendController ($scope, $state) {
   var vm = this;
   vm.self = "hi";
+}
+
+function MeController ($scope, $state) {
+  var vm = this;
+  vm.self = "Hello!";
+}
+
+function FeelingController ($scope, $state) {
+  var vm = this;
+  vm.self = "All the feels";
 }
