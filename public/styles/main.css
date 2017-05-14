@@ -20,6 +20,12 @@ body {
   font-family: "Raleway", sans-serif !important;
   color: black !important; }
 
+.emote-page-res {
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif !important;
+  color: black !important; }
+
 .escape {
   opacity: 0.6;
   font-size: 22px;
@@ -105,12 +111,18 @@ body {
     background: #00cdcd;
     color: #fff; }
 
-.smiley, .sad, .depressed, .eh, .happyTwo {
+.emoji {
   font-size: 70px;
   font-size: 4.375rem; }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 484px) {
+  .ally-init-res {
+    font-size: 40px;
+    font-size: 2.5rem; }
   .escape {
     position: fixed;
     bottom: 10px;
-    left: 33%; } }
+    left: 33%; }
+  .emoji {
+    font-size: 25px;
+    font-size: 1.5625rem; } }

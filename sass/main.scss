@@ -114,6 +114,10 @@ body {
   @include textStyle(70px, $sec-font, black);
 }
 
+.emote-page-res {
+  @include textStyle(40px, $sec-font, black);
+}
+
 .escape {
   @include opacity(0.6);
   @include textStyle(22px, $sec-font, #7F2626);
@@ -205,7 +209,7 @@ body {
 //==================================
 // Emoji
 //==================================
-.smiley, .sad, .depressed, .eh, .happyTwo {
+.emoji {
   @include font-size(70px);
 }
 
@@ -213,10 +217,16 @@ body {
 //  Media Queries
 // ==========================================
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 484px) {
+  .ally-init-res {
+    @include font-size(40px);
+  }
   .escape {
     position: fixed;
     bottom:10px;
     left: 33%;
+  }
+  .emoji {
+    @include font-size(25px);
   }
 }
