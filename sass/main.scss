@@ -109,6 +109,11 @@ body {
   @include gradient($themeColor1, $themeColor2, vertical, no-repeat);
 }
 
+// Controls styling for "Hi, I'm Ally!"
+.display-2 {
+  @include textStyle(70px, $sec-font, black);
+}
+
 .escape {
   @include opacity(0.6);
   @include textStyle(22px, $sec-font, #7F2626);
