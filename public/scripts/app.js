@@ -71,6 +71,12 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     url: '/team',
     templateUrl: 'templates/team.html'
   })
+  .state('violated', {
+    url: '/violated',
+    templateUrl: 'templates/violated.html',
+    controller: "ViolatedController",
+    controllerAs: 'violated'
+  })
 
 
 

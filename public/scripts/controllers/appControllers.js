@@ -6,6 +6,7 @@ angular
   .controller('MeController', MeController)
   .controller('FeelingController', FeelingController)
   .controller('EmotionController', EmotionController)
+  .controller('ViolatedController', ViolatedController)
 
 // var resObj = {
 // 	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
@@ -55,4 +56,9 @@ function FeelingController ($scope, $state) {
 function EmotionController ($scope, $state) {
   var vm = this;
   vm.self = "Listing emotions";
+}
+
+function ViolatedController ($scope, $state) {
+  var vm = this;
+  vm.self = "Violated";
 }
