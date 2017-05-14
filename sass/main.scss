@@ -189,11 +189,11 @@ body {
 .mat-btn {
   border: 2px solid #00cdcd !important;
   border-radius: 0px !important;
-  background: #00cdcd;
-  color: #fff;
+  background: transparent;
+  color: #00cdcd;
   &:hover {
-    background: transparent;
-    color: #00cdcd;
+    background: #00cdcd;
+    color: #fff;
   }
 }
 
