@@ -200,7 +200,8 @@ body {
   border-radius: 0px !important;
   background: transparent;
   color: #00cdcd;
-  width: 130px;
+  min-width: 130px;
+  max-width: 200px;
   &:hover {
     background: #00cdcd;
     color: #fff;
@@ -219,6 +220,12 @@ body {
   height: 150px !important;
   overflow-y: scroll !important;
 }
+
+.button-top-space {
+  margin-top: 20px;
+}
+
+
 //==================================
 // Emoji
 //==================================
