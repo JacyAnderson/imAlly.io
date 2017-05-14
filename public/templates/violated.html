@@ -1,0 +1,31 @@
+<div class="container d-flex align-items-center h-75">
+  <div class="row justify-content-center" style="width: 100%">
+    <div class="col-6 text-center">
+      <h2 class="display-2 ally-init-res"></h2>
+      <h4 class="display-5">I'm sorry, no one should have to feel that way. Based on your response here are some resources I found that may be helpful:</h4>
+      <div class="container">
+        <hr/>
+        <div class="row justify-content-center">
+          <div class="card resource-card col-md-3" style="width: 20rem;" ng-repeat="res in resource.all">
+            <img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap" href="https://www.rainn.org/">
+            <div class="card-block">
+              <div class="row"> 
+                <h5>{{res.title}}</h5>
+                <h6 style="font-size: 18px; color: #00cdcd">{{res.type}}</h6>
+                <hr/>
+                <div style="height: 150px; overflow-y: scroll;">
+                  <p class="card-text">{{res.description}}</p> 
+                </div>
+                <div class="row btn-row justify-content-center">
+                  <div class="col-md-12">
+                    <a href={{resource.res.url}} class="btn btn-primary res-btn"><i class="material-icons">phone</i> <span class="btn-text">800.656.HOPE(4673)</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
