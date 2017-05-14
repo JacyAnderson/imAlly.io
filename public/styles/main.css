@@ -105,6 +105,10 @@ body {
     background: #00cdcd;
     color: #fff; }
 
+.smiley {
+  font-size: 30px;
+  font-size: 1.875rem; }
+
 @media screen and (max-width: 448px) {
   .escape {
     position: fixed;
