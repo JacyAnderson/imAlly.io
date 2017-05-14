@@ -1,8 +1,10 @@
 module.exports = function(sequelize, Sequelize){
 	var model = sequelize.define("resource", {
+		logo: Sequelize.STRING,
 		title: Sequelize.STRING,
-		catagory: Sequelize.STRING,
-		resource_Url: Sequelize.STRING
+		description: Sequelize.STRING,
+		url: Sequelize.STRING,
+		type: Sequelize.STRING
 	});
 
 	return model;
