@@ -9,18 +9,18 @@ var resObj = [{
 	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
 	type: "Hotline"
 }, {
-	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
-	title: 'The Rape, Abuse & Incest National Network (RAINN)',
-	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
+	logo: 'http://savacenter.org/wp-content/uploads/2015/01/SAVA-Logo.jpg',
+	title: 'Sexual Assault Viticm Advocate (SAVA)',
+	description: 'SAVA’s direct victim services provide a safety net to individuals impacted by sexual violence. SAVA’s services offer accessible, inclusive therapy and support services to victims regardless of income, gender, sexual orientation, immigration status or any other characteristic.',
 	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
-	type: "Hotline"
+	type: "General"
 },
 {
-	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
-	title: 'The Rape, Abuse & Incest National Network (RAINN)',
-	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
-	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
-	type: "Hotline"
+	logo: 'https://pbs.twimg.com/profile_images/859437344025399297/9pHVtL3l.jpg',
+	title: 'Vera House Survivor Stories',
+	description: 'It is the mission of Vera House, Inc. to end all domestic and sexual violence, to assist families in crisis, to support those affected by domestic and sexual violence to live safe, self-sufficient lives, to empower women and children, and to promote a culture of equality and respect in all relationships.',
+	url: 'http://www.verahouse.org/domestic-violence-sexual-assault/survivors/survivors-stories',
+	type: "Survivor Stories"
 },
 {
 	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
