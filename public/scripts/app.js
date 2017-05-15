@@ -89,6 +89,3 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
 }
 
-/////////////////
-// CONTROLLERS //
-/////////////////
