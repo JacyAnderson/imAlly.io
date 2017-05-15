@@ -1,7 +1,7 @@
 angular.module('AdminApp')
-  .service('Account', Account);
+.service('Account', Account);
 
-  
+
 //////////////
 // Services //
 //////////////
@@ -10,7 +10,6 @@ Account.$inject = ["$http", "$q", "$auth"]; // minification protection
 function Account($http, $q, $auth) {
   var self = this;
   self.user = null;
-
   self.signup = signup;
   self.login = login;
   self.logout = logout;
@@ -19,39 +18,42 @@ function Account($http, $q, $auth) {
   self.updateProfile = updateProfile;
   self.loginAttempt = false;
 
+  // sign user up
   function signup(userData) {
     return (
       $auth
-        .signup(userData) // signup (https://github.com/sahat/satellizer#authsignupuser-options)
+        .signup(userData)
         .then(
           function onSuccess(response) {
-            $auth.setToken(response.data.token); // set token (https://github.com/sahat/satellizer#authsettokentoken)
+            $auth.setToken(response.data.token); // set token
           },
 
           function onError(error) {
             console.error(error);
           }
-        )
-    );
+          )
+        );
   }
 
+  // log user in
   function login(userData) {
     return (
       $auth
-        .login(userData) // login (https://github.com/sahat/satellizer#authloginuser-options)
+        .login(userData)
         .then(
           function onSuccess(response) {
-            $auth.setToken(response.data.token); // set token (https://github.com/sahat/satellizer#authsettokentoken)
+            $auth.setToken(response.data.token); // set token
           },
 
           function onError(error) {
             console.error(error);
             self.loginFail = true;
           }
-        )
-    );
+          )
+        );
   }
 
+  // log user out
   function logout() {
     return (
       $auth
@@ -59,9 +61,10 @@ function Account($http, $q, $auth) {
         .then(function() {
           self.user = null;
         })
-    );
+        );
   }
 
+  // get current user
   function currentUser() {
     if ( self.user ) { return self.user; }
     if ( !$auth.isAuthenticated() ) { return null; }
@@ -78,27 +81,27 @@ function Account($http, $q, $auth) {
         self.user = null;
         deferred.reject();
       }
-    )
+      )
     self.user = promise = deferred.promise;
     return promise;
 
   }
 
+  // get users profile
   function getProfile() {
     return $http.get('/api/me');
   }
 
+  // Update profile
   function updateProfile(profileData) {
     return (
       $http
-        .put('/api/me', profileData)
-        .then(
-          function (response) {
-            self.user = response.data;
-          }
+      .put('/api/me', profileData)
+      .then(
+        function (response) {
+          self.user = response.data;
+        }
         )
-    );
+      );
   }
-
-
 }

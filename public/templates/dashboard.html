@@ -5,38 +5,38 @@
 	<div class="main main-raised">
 		<div class="container">
 			<table class="table dashboard-table">
-			    <thead>
-			        <tr>
-			            <th class="text-center">#</th>
-			            <th>Title</th>
-			            <th>Logo URL</th>
-			            <th>Description</th>
-			            <th>Url</th>
-			            <th class="text-right">Type</th>
-			            <th>Controls</th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			        <tr ng-repeat="resource in dc.all">
-			            <td class="text-center">{{resource.id}}</td>
-			            <td>{{resource.title}}</td>
-			            <td>{{resource.logo}}</td>
-			            <td>{{resource.description}}</td>
-			            <td>{{resource.url}}</td>
-			            <td>{{resource.type}}</td>
-			            <td class="td-actions text-right">
-			                <button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
-			                    <i class="fa fa-user"></i>
-			                </button>
-			                <button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
-			                    <i class="fa fa-edit"></i>
-			                </button>
-			                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-			                    <i class="fa fa-times"></i>
-			                </button>
-			            </td>
-			        </tr>
-			    </tbody>
+				<thead>
+					<tr>
+						<th class="text-center">#</th>
+						<th>Title</th>
+						<th>Logo URL</th>
+						<th>Description</th>
+						<th>Url</th>
+						<th class="text-right">Type</th>
+						<th>Controls</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="resource in dc.all">
+						<td class="text-center">{{resource.id}}</td>
+						<td>{{resource.title}}</td>
+						<td>{{resource.logo}}</td>
+						<td>{{resource.description}}</td>
+						<td>{{resource.url}}</td>
+						<td>{{resource.type}}</td>
+						<td class="td-actions text-right">
+							<button type="button" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+								<i class="fa fa-user"></i>
+							</button>
+							<button type="button" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+								<i class="fa fa-edit"></i>
+							</button>
+							<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+								<i class="fa fa-times"></i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 			
 		</div>
