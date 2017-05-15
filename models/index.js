@@ -7,6 +7,7 @@ var sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost
   dialectOptions: {
     ssl: true /* for SSL config since Heroku gives you this out of the box */
   }});
+//kj
 
 //Export models and Sequelize for seed and dbSetup
 module.exports.Sequelize = Sequelize;
