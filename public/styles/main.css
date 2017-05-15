@@ -2,7 +2,11 @@
   background-attachment: fixed; }
 
 html, body {
-  height: 100%; }
+  height: 100%;
+  font-family: "Raleway", sans-serif !important; }
+
+.bio-pic:hover {
+  background-color: teal !important; }
 
 body {
   background-position: center center;
@@ -152,4 +156,20 @@ body {
     left: 33%; }
   .emoji {
     font-size: 25px;
-    font-size: 1.5625rem; } }
+    font-size: 1.5625rem; }
+  .last-bio {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 991px) {
+  .btn {
+    margin-top: 10px; } }
+
+@media screen and (max-width: 320px) {
+  .display-2 {
+    font-size: 25px;
+    font-size: 1.5625rem; }
+  .display-5 {
+    font-size: 22px;
+    font-size: 1.375rem; }
+  .emoji {
+    margin: 5px 0 0 0; } }
