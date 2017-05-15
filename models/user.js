@@ -15,7 +15,7 @@ module.exports = function(sequelize, Sequelize) {
   });
 
   // //Only needed for setup
-  User.sync({force: true});
+  // User.sync({force: true});
 
   User.beforeCreate(function(user, options) {
     //Async didn't work with this hook :(
