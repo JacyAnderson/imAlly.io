@@ -6,7 +6,7 @@ html, body {
   font-family: "Raleway", sans-serif !important; }
 
 .bio-pic:hover {
-  background-color: teal !important; }
+  background: url(); }
 
 body {
   background-position: center center;
@@ -173,3 +173,7 @@ body {
     font-size: 1.375rem; }
   .emoji {
     margin: 5px 0 0 0; } }
+
+@media screen and (min-width: 1199px) {
+  .button-top-space {
+    margin-top: 0px !important; } }
