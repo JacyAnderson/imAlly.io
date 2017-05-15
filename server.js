@@ -24,20 +24,6 @@ var User = db.models.User;
 var routes = require('./config/routes');
 app.use(routes);
 
-
-/* API Routes */
-
-// app.get('/api/me', auth.ensureAuthenticated, userController.index);
-  
-
-// app.put('/api/me', auth.ensureAuthenticated, userController.update);
-  
-/* Auth Routes */
-
-// app.post('/auth/signup', userController.create);
-
-// app.post('/auth/login', userController.login);
-
 /*
  * Catch All Route
  */

@@ -2,7 +2,6 @@
 var Sequelize = require('sequelize');
 require('dotenv').config();
 
-// // var pg = require('pg');
 
 if (process.env.DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
@@ -16,8 +15,6 @@ if (process.env.DATABASE_URL) {
   sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
 }
 
-//var sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
-//kj
 
 //Export models and Sequelize for seed and dbSetup
 module.exports.Sequelize = Sequelize;
