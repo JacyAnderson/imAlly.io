@@ -27,7 +27,7 @@ function LoginController ($location, Account) {
     .login(vm.new_user)
     .then(function(){
         vm.new_user = {}; // clear login form
-        $location.path('/admin'); // redirect to '/profile'
+        $location.path('admin'); // redirect to '/profile'
       })
   };
 }

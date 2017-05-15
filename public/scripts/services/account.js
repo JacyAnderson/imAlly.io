@@ -61,7 +61,7 @@ function Account($http, $q, $auth) {
         .then(function() {
           self.user = null;
         })
-        );
+      );
   }
 
   // get current user
