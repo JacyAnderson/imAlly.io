@@ -104,6 +104,11 @@ $themeColor2: rgba(108,206,217, 0.6);
 
 html, body {
   height: 100%;
+  font-family: $sec-font;
+}
+
+.bio-pic:hover {
+  background-color: teal !important;
 }
 
 body {
@@ -264,5 +269,32 @@ body {
   }
   .emoji {
     @include font-size(25px);
+  }
+  .last-bio {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  // .button-top-space {
+  //   margin-top: 0px !important;
+  // }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .display-2 {
+    @include font-size(25px);
+  }
+
+  .display-5 {
+    @include font-size(22px);
+  }
+
+  .emoji {
+    margin: 5px 0 0 0;
   }
 }
