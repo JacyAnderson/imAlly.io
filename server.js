@@ -7,7 +7,7 @@ var express = require('express'),
     userController = require('./controllers/user');
 
 // require and load dotenv
-require('dotenv').config({path: __dirname + '/.env'});
+require('dotenv').config();
 
 
 // configure bodyParser (for receiving form data)
@@ -45,7 +45,7 @@ app.get(['/admin', '/admin-signup', '/admin-login'], function (req, res) {
   res.sendFile(__dirname + '/views/admin.html');
 });
 
-app.get(['/', '/next'], function (req, res) {
+app.get(['/', '/next', '/resource', '/friend-1', '/me-1', '/feeling', '/emotion', '/team', '/violated'], function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
