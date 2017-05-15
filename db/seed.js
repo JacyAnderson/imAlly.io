@@ -46,22 +46,24 @@ var resources = [
 ];
 
 var resourceCreate = function() {
-	return DB.resource.create({
-		logo: '',
-		title: '',
-		description: '',
-		url: '',
-		type: ''
-	});
-};
+	return DB.Resource.bulkCreate(resources );
+
+	// return DB.Resource.create({
+	// 	logo: 'https://www.rainn.org/sites/all/themes/rainn/logo.svg',
+	// 	title: 'The Rape, Abuse & Incest National Network (RAINN)',
+	// 	description: 'The Rape, Abuse & Incest National Network (RAINN) is an American anti-sexual assault organization, the largest in the United States. RAINN operates the National Sexual Assault Hotline and carries out programs to prevent sexual assault, help victims, and to ensure that rapists are brought to justice.',
+	// 	url: 'https://www.rainn.org/about-national-sexual-assault-telephone-hotline',
+	// 	type: "Hotline"
+	// });
+}
 
 resourceCreate()
-.then(function(resource){
-	resources.forEach(function(source){
-		source.resourceId = resource.id;
-	});
-	DB.Resource.bulkCreate(resources);
-})
+// .then(function(resource){
+// 	resources.forEach(function(source){
+// 		source.resourceId = resource.id;
+// 	});
+// 	DB.Resource.bulkCreate(resources);
+// })
 .then(function(){
 	process.exit();
 });
