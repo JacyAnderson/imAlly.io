@@ -84,5 +84,11 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: "HappyController",
     controllerAs: 'happy'
   })
+  .state('idk', {
+    url:'/idk',
+    templateUrl: 'templates/idk.html',
+    controller: "IdkController",
+    controllerAs: "idk"
+  })
 }
 

@@ -1,0 +1,27 @@
+<div class="container row-space">
+    <h1 class="display-1">Resources</h1>
+    <p class="lead">Some resources that could be helpful</p>
+</div>
+<div class="container">
+<hr/>
+  <div class="row justify-content-center">
+    <div class="card resource-card col-md-3 text-center" ng-repeat="res in resource.all">
+      <a href= {{res.url}}><img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap"></a>
+      <div class="card-block">
+        <div class="row"> 
+          <h5>{{res.title}}</h5>
+          <h6 class="card-type">{{res.type}}</h6>
+          <hr/>
+          <div class="card-description">
+          <p class="card-text">{{res.description}}</p> 
+          </div>
+          <div class="row btn-row justify-content-center">
+            <div class="col-md-12">
+              <a href={{resource.res.url}} class="btn btn-primary res-btn"><i class="material-icons">phone</i> <span class="btn-text">800.656.HOPE(4673)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
