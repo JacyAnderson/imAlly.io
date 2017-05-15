@@ -132,6 +132,12 @@ body {
 .button-top-space {
   margin-top: 20px; }
 
+.violated-response {
+  margin-top: 55px; }
+
+.violated-response-text {
+  line-height: 2; }
+
 .emoji {
   font-size: 70px;
   font-size: 4.375rem; }

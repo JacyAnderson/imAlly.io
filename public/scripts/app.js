@@ -74,8 +74,8 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   .state('violated', {
     url: '/violated',
     templateUrl: 'templates/violated.html',
-    controller: "ViolatedController",
-    controllerAs: 'violated'
+    controller: "ResourceController",
+    controllerAs: 'resource'
   })
 
 
