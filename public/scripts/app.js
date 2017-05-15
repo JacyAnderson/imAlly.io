@@ -77,6 +77,12 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: "ResourceController",
     controllerAs: 'resource'
   })
+  .state('happy', {
+    url: '/happy',
+    templateUrl: 'templates/happy.html',
+    controller: "HappyController",
+    controllerAs: 'happy'
+  })
   
 
 
