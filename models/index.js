@@ -4,17 +4,17 @@ require('dotenv').config();
 
 // // var pg = require('pg');
 
-// if (process.env.DATABASE_URL) {
+if (process.env.DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
-  sequelize = new Sequelize('postgres://przdfsqhzwokyx@localhost:5432/dbdgf7m0mtlfv7', {
+  sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
     protocol: 'postgres',
    	logging: true
    	});
-// } else {
-//   // the application is executed on the local machine
-//   sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
-// }
+} else {
+  // the application is executed on the local machine
+  sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
+}
 
 //var sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
 //kj
