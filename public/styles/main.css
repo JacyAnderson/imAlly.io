@@ -152,6 +152,9 @@ body {
 .back-btn-row {
   margin-top: 20px; }
 
+.friend-display {
+  font-size: 32px; }
+
 .emoji {
   font-size: 70px;
   font-size: 4.375rem; }
