@@ -1,6 +1,7 @@
 
 var bcrypt = require('bcryptjs');
 
+// creates model for user
 module.exports = function(sequelize, Sequelize) {
   var User = sequelize.define('user', {
     displayName: Sequelize.STRING,
@@ -17,6 +18,7 @@ module.exports = function(sequelize, Sequelize) {
   // //Only needed for setup
   // User.sync({force: true});
 
+  // salt and hash password
   User.beforeCreate(function(user, options) {
     //Async didn't work with this hook :(
     var salt = bcrypt.genSaltSync(10);

@@ -24,6 +24,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
   // for any unmatched URL redirect to /
   $urlRouterProvider.otherwise("/");
 
+  // url and states and controllers for all routes
   $stateProvider
      .state('home', {
       url: '/',
@@ -83,12 +84,5 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: "HappyController",
     controllerAs: 'happy'
   })
-  
-
-
-
 }
 
-/////////////////
-// CONTROLLERS //
-/////////////////
