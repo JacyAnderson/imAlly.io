@@ -86,6 +86,7 @@ $themeColor2: rgba(108,206,217, 0.6);
   color: $color !important;
 }
 
+// Sets background to fit full screen
 @mixin fullBackground {
   background-position: center center;
   background-repeat: no-repeat;
@@ -102,8 +103,14 @@ $themeColor2: rgba(108,206,217, 0.6);
 //  All out Sass
 // ==========================================
 
+// Sets styles for entire body
 html, body {
   height: 100%;
+  font-family: $sec-font;
+}
+
+.bio-pic:hover {
+  
 }
 
 body {
@@ -229,6 +236,7 @@ body {
   color: #00cdcd !important;
 }
 
+// Increases margin above buttons with class applied
 .button-top-space {
   margin-top: 20px;
 }
@@ -263,5 +271,42 @@ body {
   }
   .emoji {
     @include font-size(25px);
+  }
+  .last-bio {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  // .button-top-space {
+  //   margin-top: 0px !important;
+  // }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .display-2 {
+    @include font-size(25px);
+  }
+
+  .display-5 {
+    @include font-size(22px);
+  }
+
+  .emoji {
+    margin: 5px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .button-top-space {
+    margin-top: 0px !important;
+  }
+
+  .btm-btn {
+    margin-top: 10px !important;
   }
 }

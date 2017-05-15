@@ -62,3 +62,4 @@ function ViolatedController ($scope, $state) {
   var vm = this;
   vm.self = "Violated";
 }
+
