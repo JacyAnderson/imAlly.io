@@ -3,7 +3,8 @@
 [Link to Heroku](allyio.herokuapp.com) |
 [Link to Basic Wireframe](http://imgur.com/a/6DQAQ) | 
 [Link to Trello Board](https://trello.com/b/G7MfoRFP/project-three-buddy-app) |
-[Link to Google Doc with Extra Info and User Research](https://docs.google.com/document/d/13dS-XViaNo5YinrbeuQeZGoCc0wa6ZInLeLRyhOHpTs/edit?usp=sharing)
+[Link to Google Doc with Extra Info and User Research](https://docs.google.com/document/d/13dS-XViaNo5YinrbeuQeZGoCc0wa6ZInLeLRyhOHpTs/edit?usp=sharing) | 
+[Link to Presentation](https://docs.google.com/presentation/d/1hzz6TyGGjEWkeZjIDHM7qiG1LoUxN7WIMW-3he2_Nu0/edit?usp=sharing)
 
 ## Project Description 
 Ally.io is an anonymous, virtual “buddy” to help connect survivors of sexual violence (or their friends/family) with support resources via a conversation-like interface. This app is presented in manner that maintains a sense of anonimity, as during our user testing we found that people wanted the app to be "covert", meaning that people who look at the app from a distance wouldn't know what it was (as in a perpetrator), and we convey this through the apps name "Ally", which doubles for the 'bot's' name (pronounced Allie) and its true meaning (an ally to survivors of sexual violence). 
