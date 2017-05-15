@@ -77,6 +77,7 @@ function configRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
     controller: "ResourceController",
     controllerAs: 'resource'
   })
+  
 
 
 
