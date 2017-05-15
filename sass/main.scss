@@ -14,6 +14,7 @@ $sec-font: 'Raleway', sans-serif !important;
 $mainColor: #ffffcc;
 $secColor: #242424;
 
+// Site Theme Colors
 $themeColor1: rgba(223,133,182, 0.6);
 $themeColor2: rgba(108,206,217, 0.6);
 
@@ -96,6 +97,7 @@ $themeColor2: rgba(108,206,217, 0.6);
   background-size: cover
 }
 
+// Sets background to size of screen
 .background-fixed {
    background-attachment: fixed;
 }
@@ -109,10 +111,7 @@ html, body {
   font-family: $sec-font;
 }
 
-.bio-pic:hover {
-  
-}
-
+// Sets background gradient
 body {
   @include fullBackground;
   // @include gradient(#cef2ef, #6cced9, vertical, no-repeat);
@@ -124,10 +123,12 @@ body {
   @include textStyle(70px, $sec-font, black);
 }
 
+// Changes Ally response size on Emoji page
 .emote-page-res {
   @include textStyle(40px, $sec-font, black);
 }
 
+// Escape button styling
 .escape {
   @include opacity(0.6);
   @include textStyle(22px, $sec-font, #7F2626);
@@ -142,20 +143,23 @@ body {
   }
 }
 
+// Styles face icon in Ally.io brand
 .face {
   @include font-size(32px); 
 }
 
+// Navbar and escape btns
 .navbar, .escape {
   background-color: transparent !important; 
 }
 
+// Sets standard size for Rainn logo
 .rainn-logo {
   @include size(160px, 80px);
   margin: 0 auto;
-  // padding: 10px;
 }
 
+// User response button styling
 .res-btn {
   @include textStyle(15px, $sec-font, black);
   font-weight: 600;
@@ -170,18 +174,20 @@ body {
     color: white !important;
     background-color: teal !important;
   }
-  // margin-right: 100px;
 }
 
+// Styles resource cards
 .resource-card {
   margin: 40px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+// Hamburger menu and escape button margin
 .toggler, .escape {
   margin-top: 20px !important;
 }
 
+// Hamburger menu styling
 .toggler {
   outline: none !important;
   border: none;
@@ -193,23 +199,20 @@ body {
   margin-left: 60px !important;
 }
 
-// //============================================
-
+// Text center text styling
 .text-center {
   @include textStyle(15px, $sec-font, $secColor);
   margin-top: 40px;
 }
 
-.tooltip {
-  @include textStyle(20px, $sec-font, black);
-  margin-top: 8px !important;
-}
-
+// Button styles for material design
 .mat-btn {
   border: 2px solid #00cdcd !important;
   border-radius: 0px !important;
   background: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   color: #00cdcd;
+  letter-spacing: 1px;
   min-width: 130px;
   max-width: 200px;
   &:hover {
@@ -218,19 +221,23 @@ body {
   }
 }
 
+// Class to establish full-width
 .full-width{
   width: 100% !important;
 }
 
+// Adds padding to top of rows
 .row-space {
   padding-top: 20px;
 }
 
+// Styles card descriptions
 .card-description {
   height: 150px !important;
   overflow-y: scroll !important;
 }
 
+// Styles cards
 .card-type {
   font-size: 18px !important;
   color: #00cdcd !important;
@@ -241,10 +248,17 @@ body {
   margin-top: 20px;
 }
 
+// Team member name styling
+.team h3 {
+  margin-top: 10px;
+}
+
+// Response styling
 .violated-response {
   margin-top: 55px;
 }
 
+// Styles the response's text
 .violated-response-text {
   line-height: 2;
 }
@@ -256,6 +270,8 @@ body {
 //==================================
 // Emoji
 //==================================
+
+// Sets emojis to set size
 .emoji {
   @include font-size(70px);
 }
@@ -264,33 +280,7 @@ body {
 //  Media Queries
 // ==========================================
 
-@media screen and (max-width: 484px) {
-  .ally-init-res {
-    @include font-size(40px);
-  }
-  .escape {
-    position: fixed;
-    bottom:10px;
-    left: 33%;
-  }
-  .emoji {
-    @include font-size(25px);
-  }
-  .last-bio {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  // .button-top-space {
-  //   margin-top: 0px !important;
-  // }
-
-  .btn {
-    margin-top: 10px;
-  }
-}
-
+// Extra small screens
 @media screen and (max-width: 320px) {
   .display-2 {
     @include font-size(25px);
@@ -305,6 +295,42 @@ body {
   }
 }
 
+// Small screens
+@media screen and (max-width: 484px) {
+  .ally-init-res {
+    @include font-size(40px);
+  }
+
+  .escape {
+    position: fixed;
+    bottom:10px;
+    left: 33%;
+  }
+
+  .emoji {
+    @include font-size(25px);
+  }
+
+  .last-bio {
+    margin-bottom: 50px;
+  }
+}
+
+// Adjusts margin for brand
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    margin-left: 25px !important;
+  }
+}
+
+// Large Screens
+@media screen and (max-width: 991px) {
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+// XL Screens
 @media screen and (min-width: 1199px) {
   .button-top-space {
     margin-top: 0px !important;
@@ -312,5 +338,11 @@ body {
 
   .btm-btn {
     margin-top: 10px !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .last-bio {
+    margin: 0 auto;
   }
 }

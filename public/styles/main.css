@@ -98,18 +98,13 @@ body {
   color: #242424 !important;
   margin-top: 40px; }
 
-.tooltip {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-family: "Raleway", sans-serif !important;
-  color: black !important;
-  margin-top: 8px !important; }
-
 .mat-btn {
   border: 2px solid #00cdcd !important;
   border-radius: 0px !important;
   background: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   color: #00cdcd;
+  letter-spacing: 1px;
   min-width: 130px;
   max-width: 200px; }
   .mat-btn:hover {
@@ -133,6 +128,9 @@ body {
 .button-top-space {
   margin-top: 20px; }
 
+.team h3 {
+  margin-top: 10px; }
+
 .violated-response {
   margin-top: 55px; }
 
@@ -142,6 +140,16 @@ body {
 .emoji {
   font-size: 70px;
   font-size: 4.375rem; }
+
+@media screen and (max-width: 320px) {
+  .display-2 {
+    font-size: 25px;
+    font-size: 1.5625rem; }
+  .display-5 {
+    font-size: 22px;
+    font-size: 1.375rem; }
+  .emoji {
+    margin: 5px 0 0 0; } }
 
 @media screen and (max-width: 484px) {
   .ally-init-res {
@@ -157,22 +165,20 @@ body {
   .last-bio {
     margin-bottom: 50px; } }
 
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    margin-left: 25px !important; } }
+
 @media screen and (max-width: 991px) {
   .btn {
     margin-top: 10px; } }
-
-@media screen and (max-width: 320px) {
-  .display-2 {
-    font-size: 25px;
-    font-size: 1.5625rem; }
-  .display-5 {
-    font-size: 22px;
-    font-size: 1.375rem; }
-  .emoji {
-    margin: 5px 0 0 0; } }
 
 @media screen and (min-width: 1199px) {
   .button-top-space {
     margin-top: 0px !important; }
   .btm-btn {
     margin-top: 10px !important; } }
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .last-bio {
+    margin: 0 auto; } }
