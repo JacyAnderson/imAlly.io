@@ -10,3 +10,18 @@
 .dashboard-table {
 	margin: 50px 0;
 }
+
+.form input {
+	background-image: none;
+	border-bottom: 2px solid #eee;
+	outline: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #00cdcd;
+}
+
+.form input.ng-invalid.ng-touched {
+    border-bottom: 2px solid #FA787E;!important
+}
