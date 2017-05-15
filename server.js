@@ -31,7 +31,7 @@ app.get(['/admin', '/admin-signup', '/admin-login'], function (req, res) {
   res.sendFile(__dirname + '/views/admin.html');
 });
 
-app.get(['/', '/next', '/resource', '/friend-1', '/me-1', '/feeling', '/emotion', '/team', '/violated'], function (req, res) {
+app.get(['/', '/next', '/resource', '/friend-1', '/me-1', '/feeling', '/emotion', '/team', '/violated', '/happy'], function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
