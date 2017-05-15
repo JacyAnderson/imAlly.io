@@ -6,7 +6,7 @@ require('dotenv').config();
 
 if (process.env.DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
-  sequelize = new Sequelize(process.env.DATABASE_URL, {
+  sequelize = new Sequelize('postgres://przdfsqhzwokyx@localhost:5432/dbdgf7m0mtlfv7', {
     dialect: 'postgres',
     protocol: 'postgres',
    	logging: true
