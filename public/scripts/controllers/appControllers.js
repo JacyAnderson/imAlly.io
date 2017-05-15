@@ -8,6 +8,7 @@ angular
 .controller('EmotionController', EmotionController)
 .controller('ViolatedController', ViolatedController)
 .controller('HappyController', HappyController)
+.controller('IdkController', IdkController)
 
 function MainController() {
   var vm = this;
@@ -58,5 +59,11 @@ function ViolatedController() {
 function HappyController() {
   var vm = this;
   vm.self = "Happy";
+}
+
+//sets up controller for idk
+function IdkController() {
+  var vm = this;
+  vm.self = "Idk";
 }
 
