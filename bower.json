@@ -1,0 +1,25 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/JacyAnderson/project-3",
+  "authors": [
+    "Taylor Laine <tlaine@msudenver.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "satellizer": "^0.15.5"
+  },
+  "resolutions": {
+    "angular": "^1.6.4"
+  }
+}
