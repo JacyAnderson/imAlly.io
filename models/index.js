@@ -2,7 +2,11 @@
 var Sequelize = require('sequelize');
 require('dotenv').config();
 
-var sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally');
+var sequelize = new Sequelize('postgres://' + process.env.USERNAME + '@localhost:5432/ally' || process.env.DATABASE_URL, {
+  logging: false,
+  dialectOptions: {
+    ssl: true /* for SSL config since Heroku gives you this out of the box */
+  }});
 
 //Export models and Sequelize for seed and dbSetup
 module.exports.Sequelize = Sequelize;
