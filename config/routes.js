@@ -9,17 +9,6 @@ var auth = require('../resources/auth');
 // index
 router.get('/api/resources', resourceController.index);
 
-// // create
-// router.post('/api/resources', resourceController.create);
-
-// // show
-// router.get('/api/resources/:id', resourceController.show);
-
-// // update
-// router.put('/api/resources/:id', resourceController.update);
-
-// // destroy 
-// router.delete('/api/resources/:id', resourceController.destroy);
 
 // User Routes 
 
