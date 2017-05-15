@@ -137,6 +137,9 @@ body {
 .violated-response-text {
   line-height: 2; }
 
+.table-height {
+  height: 10%; }
+
 .emoji {
   font-size: 70px;
   font-size: 4.375rem; }
