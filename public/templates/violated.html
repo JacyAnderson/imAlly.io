@@ -10,7 +10,7 @@
  <div class="container">
         <div class="row justify-content-center">
           <div class="card resource-card col-md-3" ng-repeat="res in resource.all">
-            <img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap" href="https://www.rainn.org/">
+            <a href= {{res.url}}><img class="card-img-top rainn-logo" src={{res.logo}} alt="Card image cap">
             <div class="card-block">
               <div class="row"> 
                 <h5>{{res.title}}</h5>
