@@ -7,7 +7,7 @@ var express = require('express'),
     userController = require('./controllers/user');
 
 // require and load dotenv
-require('dotenv').config();
+require('dotenv').config({path: __dirname + '/.env'});
 
 
 // configure bodyParser (for receiving form data)
@@ -53,6 +53,6 @@ app.get(['/', '/next'], function (req, res) {
 /*
  * Listen on localhost:9000
  */
-app.listen(9000, function() {
+app.listen(process.env.PORT || 9000, function() {
   console.log('server started');
 });

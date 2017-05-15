@@ -1,6 +1,6 @@
 //Connect
 var Sequelize = require('sequelize');
-require('dotenv').config();
+require('dotenv').config({path: __dirname + '/.env'});
 
 // var pg = require('pg');
 
