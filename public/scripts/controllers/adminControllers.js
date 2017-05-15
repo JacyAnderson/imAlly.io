@@ -80,17 +80,15 @@ function LogoutController ($location, Account) {
 }
 
 
-DashboardController.$inject = ["$location", "Account"]; // minification protection
-function DashboardController ($location, Account) {
-  // var vm = this;
-  // vm.new_profile = {}; // form data
-
-  // vm.updateDashboard = function() {
-  //   Account
-  //     .updateProfile(vm.new_profile)
-  //     .then(function () {
-  //       vm.showEditForm = false;
-  //     });
-  // };
+DashboardController.$inject = ["$location", "Account", '$http']; // minification protection
+function DashboardController ($location, Account, $http) {
+var vm = this;
+  $http.get('/api/resources')
+    .then (
+      function (response) {
+            console.log(response);
+              vm.all = response.data;
+          }
+        )
 }
 
